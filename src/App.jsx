@@ -92,15 +92,15 @@ function App() {
         {/* Photo mosaic */}
         <div className="hero-photos">
           <div className="hph tall">
-            <img src="/gallery/bundled-lumber-warehouse.jpg" alt="Ash Lumber" />
+            <img src={`${import.meta.env.BASE_URL}gallery/bundled-lumber-warehouse.jpg`} alt="Ash Lumber" />
             <div className="hph-cap">Ash Lumber</div>
           </div>
           <div className="hph">
-            <img src="/gallery/logs-truck-loading.jpg" alt="Logs Truck Loading" />
+            <img src={`${import.meta.env.BASE_URL}gallery/logs-truck-loading.jpg`} alt="Logs Truck Loading" />
             <div className="hph-cap">Logs Loading</div>
           </div>
           <div className="hph">
-            <img src="/gallery/ash1.jpg" alt="White Pine 19mm" />
+            <img src={`${import.meta.env.BASE_URL}gallery/ash1.JPG`} alt="White Pine 19mm" />
             <div className="hph-cap">WP 19mm</div>
           </div>
         </div>
@@ -252,13 +252,13 @@ function App() {
           <div className="about-grid">
             <div className="about-photos">
               <div className="ap span2">
-                <img src="/gallery/Log%20Yard%20Picture.JPG" alt="Log Yard" />
+                <img src={`${import.meta.env.BASE_URL}gallery/Log%20Yard%20Picture.JPG`} alt="Log Yard" />
               </div>
               <div className="ap tall">
-                <img src="/gallery/WP%2019MM.PNG" alt="White Pine Lumber" />
+                <img src={`${import.meta.env.BASE_URL}gallery/WP%2019MM.PNG`} alt="White Pine Lumber" />
               </div>
               <div className="ap sq">
-                <img src="/gallery/ASH%20Lumber.JPG" alt="Southern Yellow Pine Stock" />
+                <img src={`${import.meta.env.BASE_URL}gallery/ASH%20Lumber.JPG`} alt="Southern Yellow Pine Stock" />
               </div>
               <div className="ap-badge">
                 <div className="ap-badge-n">15+</div>
@@ -309,23 +309,23 @@ function App() {
         <div className="gal-track">
           {[...Array(12)].map((_, i) => {
             const images = [
-              '/gallery/ais-branded-lumber.jpg',
-              '/gallery/bundled-lumber-warehouse.jpg',
-              '/gallery/log-pile-outdoor.jpg',
-              '/gallery/logs-forest-harvest.jpg',
-              '/gallery/logs-truck-loading.jpg',
-              '/gallery/lumber-bundles-stacked.jpg',
-              '/gallery/ais-branded-lumber.jpg',
-              '/gallery/bundled-lumber-warehouse.jpg',
-              '/gallery/log-pile-outdoor.jpg',
-              '/gallery/logs-forest-harvest.jpg',
-              '/gallery/logs-truck-loading.jpg',
-              '/gallery/lumber-bundles-stacked.jpg'
+              'ais-branded-lumber.jpg',
+              'bundled-lumber-warehouse.jpg',
+              'log-pile-outdoor.jpg',
+              'logs-forest-harvest.jpg',
+              'logs-truck-loading.jpg',
+              'lumber-bundles-stacked.jpg',
+              'ais-branded-lumber.jpg',
+              'bundled-lumber-warehouse.jpg',
+              'log-pile-outdoor.jpg',
+              'logs-forest-harvest.jpg',
+              'logs-truck-loading.jpg',
+              'lumber-bundles-stacked.jpg'
             ];
-            const labels = ['','', 'ASH Logs', 'White Pine Logs', 'White Pine Logs', 'White ASH', 'SYP Rough', 'SYP Dressed Lumber', 'ASH Logs'];
+            const labels = ['Red Oak', 'White Oak', 'Maple', 'Cherry', 'Walnut', 'Mahogany', 'Ash', 'Poplar', 'Pine', 'Cedar', 'Teak', 'Birch'];
             return (
               <div key={i} className="gal-thumb">
-                <img src={images[i % 12]} alt={labels[i % 12]} />
+                <img src={`${import.meta.env.BASE_URL}gallery/${images[i % 12]}`} alt={labels[i % 12]} />
                 <div className="gal-thumb-cap">{labels[i % 12]}</div>
               </div>
             );
