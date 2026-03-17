@@ -252,13 +252,13 @@ function App() {
           <div className="about-grid">
             <div className="about-photos">
               <div className="ap span2">
-                <img src="/gallery/Log Yard Picture.JPG" alt="Log Yard" />
+                <img src="/gallery/Log%20Yard%20Picture.JPG" alt="Log Yard" />
               </div>
               <div className="ap tall">
-                <img src="/gallery/WP 19MM.png" alt="White Pine Lumber" />
+                <img src="/gallery/WP%2019MM.PNG" alt="White Pine Lumber" />
               </div>
               <div className="ap sq">
-                <img src="/gallery/ASH Lumber.jpg" alt="Southern Yellow Pine Stock" />
+                <img src="/gallery/ASH%20Lumber.JPG" alt="Southern Yellow Pine Stock" />
               </div>
               <div className="ap-badge">
                 <div className="ap-badge-n">15+</div>
